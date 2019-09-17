@@ -1,0 +1,6 @@
+<h1>Markers</h1>
+<div *ngFor="let marker of markers | async">
+  <button (click)="flyTo(marker)">{{ marker.properties.message }}</button>
+</div>
+
+<div class="map" id="map" style="height: 600px;"></div>
